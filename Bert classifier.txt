@@ -1,0 +1,13 @@
+
+
+language : en
+pipeline:
+- name: HFTrasnformersNLP
+model_weights:"bert-base-uncased"
+model_name: "bert"
+- name: LanguageModeTokenizer
+- name: LanguageModeFeaturizer
+- name: DietClassifier
+epochs : 200
+
+BERT classifier for intent classification 
